@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Online Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <a href="index.html">My<span>Shop</span></a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="homeSearch" placeholder="Search for products...">
+        <button onclick="searchFromHome()">🔍</button>
+    </div>
+
+    ```html
+<nav>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="products.html">
+        Products
+    </a>
+
+    <a href="wishlist.html">
+        ❤️ Wishlist
+        <span id="wishlistCount">0</span>
+    </a>
+
+    <a href="cart.html">
+        🛒 Cart
+        <span id="cartCount">0</span>
+    </a>
+
+    <a href="login.html" id="accountLink">
+        👤 Login
+    </a>
+
+</nav>
+```
+
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p>WELCOME TO MYSHOP</p>
+        <h1>Everything You Need.<br><span>All in One Place.</span></h1>
+        <p>Discover amazing products at amazing prices.</p>
+        <a href="products.html" class="btn">Shop Now →</a>
+    </div>
+</section>
+
+<section class="categories section">
+    <h2>Shop By Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card" onclick="goCategory('Electronics')">
+            <div class="category-icon">📱</div>
+            <h3>Electronics</h3>
+            <p>Smartphones & Gadgets</p>
+        </div>
+
+        <div class="category-card" onclick="goCategory('Fashion')">
+            <div class="category-icon">👕</div>
+            <h3>Fashion</h3>
+            <p>Clothes & Shoes</p>
+        </div>
+
+        <div class="category-card" onclick="goCategory('Home')">
+            <div class="category-icon">🏠</div>
+            <h3>Home</h3>
+            <p>Make Your Home Better</p>
+        </div>
+
+        <div class="category-card" onclick="goCategory('Beauty')">
+            <div class="category-icon">💄</div>
+            <h3>Beauty</h3>
+            <p>Beauty & Personal Care</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <div>
+            <h2>Featured Products</h2>
+            <p>Top picks for you</p>
+        </div>
+
+        <a href="products.html" class="view-all">View All →</a>
+    </div>
+
+    <div id="featuredProducts" class="product-grid"></div>
+</section>
+
+<section class="offer">
+    <div>
+        <p>LIMITED TIME OFFER</p>
+        <h2>Get up to 50% OFF</h2>
+        <p>On selected products. Grab your deals before they're gone!</p>
+        <a href="products.html" class="btn">Explore Deals</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+
+        <div>
+            <h2>MyShop</h2>
+            <p>Your one-stop online shopping destination.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <div>
+            <h3>Customer Service</h3>
+            <p>Contact Us</p>
+            <p>Shipping Policy</p>
+            <p>Return Policy</p>
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 MyShop. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

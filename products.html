@@ -1,0 +1,242 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Products - MyShop</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="index.html">
+            My<span>Shop</span>
+        </a>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search products..."
+        >
+
+        <button onclick="filterProducts()">
+            🔍
+        </button>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="wishlist.html">
+            ❤️ Wishlist
+            <span id="wishlistCount">0</span>
+        </a>
+
+        <a href="cart.html">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </a>
+
+        <a
+            href="login.html"
+            id="accountLink"
+        >
+            👤 Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-banner">
+
+    <h1>
+        All Products
+    </h1>
+
+    <p>
+        Find the perfect product for you
+    </p>
+
+</section>
+
+
+<section class="shop-section">
+
+    <aside class="filters">
+
+        <h3>
+            Categories
+        </h3>
+
+        <button onclick="setCategory('All')">
+            All Products
+        </button>
+
+        <button onclick="setCategory('Electronics')">
+            📱 Electronics
+        </button>
+
+        <button onclick="setCategory('Fashion')">
+            👕 Fashion
+        </button>
+
+        <button onclick="setCategory('Home')">
+            🏠 Home
+        </button>
+
+        <button onclick="setCategory('Beauty')">
+            💄 Beauty
+        </button>
+
+        <hr>
+
+        <h3>
+            Sort By
+        </h3>
+
+        <button onclick="sortProducts('low')">
+            Price: Low to High
+        </button>
+
+        <button onclick="sortProducts('high')">
+            Price: High to Low
+        </button>
+
+        <button onclick="sortProducts('rating')">
+            Top Rated
+        </button>
+
+    </aside>
+
+
+    <main class="products-area">
+
+        <div class="shop-top">
+
+            <h2 id="resultTitle">
+                All Products
+            </h2>
+
+            <span id="productCount"></span>
+
+        </div>
+
+        <div
+            id="productsContainer"
+            class="product-grid"
+        ></div>
+
+    </main>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2>
+                MyShop
+            </h2>
+
+            <p>
+                Your one-stop online shopping destination.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+        <div>
+
+            <h3>
+                Customer Service
+            </h3>
+
+            <p>
+                Contact Us
+            </p>
+
+            <p>
+                Shipping Policy
+            </p>
+
+            <p>
+                Return Policy
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 MyShop. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,81 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - MyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <a href="index.html">My<span>Shop</span></a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="wishlistSearch" placeholder="Search products...">
+        <button onclick="searchFromWishlist()">🔍</button>
+    </div>
+
+    <nav id="navbarLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">❤️ Wishlist <span id="wishlistCount">0</span></a>
+        <a href="cart.html">🛒 Cart <span id="cartCount">0</span></a>
+        <a href="login.html" id="accountLink">👤 Login</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+    <h1>❤️ My Wishlist</h1>
+    <p>Your favorite products in one place</p>
+</section>
+
+<section class="section">
+
+    <div id="wishlistContainer" class="product-grid"></div>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h2>MyShop</h2>
+            <p>Your one-stop online shopping destination.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <div>
+            <h3>Customer Service</h3>
+            <p>Contact Us</p>
+            <p>Shipping Policy</p>
+            <p>Return Policy</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 MyShop. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+```

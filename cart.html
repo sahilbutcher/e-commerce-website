@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - MyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <a href="index.html">My<span>Shop</span></a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products..." id="cartSearch">
+        <button onclick="searchFromCart()">🔍</button>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">🛒 Cart <span id="cartCount">0</span></a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+    <h1>Shopping Cart</h1>
+    <p>Review your selected products</p>
+</section>
+
+<section class="cart-section">
+
+    <div id="cartContainer"></div>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+
+        <div>
+            <h2>MyShop</h2>
+            <p>Your one-stop online shopping destination.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+        </div>
+
+        <div>
+            <h3>Customer Service</h3>
+            <p>Contact Us</p>
+            <p>Return Policy</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 MyShop. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

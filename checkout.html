@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <a href="index.html">My<span>Shop</span></a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">🛒 Cart <span id="cartCount">0</span></a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+    <h1>Checkout</h1>
+    <p>Complete your order</p>
+</section>
+
+<section class="checkout-section">
+
+    <div class="checkout-form">
+
+        <h2>Delivery Information</h2>
+
+        <form id="checkoutForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" required>
+
+            <label>Address</label>
+            <textarea id="address" rows="4" required></textarea>
+
+            <label>City</label>
+            <input type="text" id="city" required>
+
+            <label>State</label>
+            <input type="text" id="state" required>
+
+            <label>PIN Code</label>
+            <input type="text" id="pin" pattern="[0-9]{6}" required>
+
+            <h2>Payment Method</h2>
+
+            <div class="payment-options">
+
+                <label>
+                    <input type="radio" name="payment" value="COD" checked>
+                    Cash on Delivery
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="UPI">
+                    UPI
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="Card">
+                    Credit / Debit Card
+                </label>
+
+            </div>
+
+            <button type="submit" class="btn checkout-btn">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="checkout-summary">
+
+        <h2>Order Summary</h2>
+
+        <div id="checkoutItems"></div>
+
+        <div class="summary-line">
+            <span>Subtotal</span>
+            <strong id="checkoutSubtotal">₹0</strong>
+        </div>
+
+        <div class="summary-line">
+            <span>Delivery</span>
+            <strong>FREE</strong>
+        </div>
+
+        <hr>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <strong id="checkoutTotal">₹0</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
